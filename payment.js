@@ -53,11 +53,12 @@ function add(elem) {
   var ig = document.createElement("img");
   ig.setAttribute("src", elem.image);
   var head = document.createElement("p");
-  head.style.fontWeight="bold";
-  head.style.fontSize="10px"
+  head.style.fontWeight = "bold";
+  head.style.fontSize = "10px";
   head.textContent = elem.name;
   var des = document.createElement("p");
   des.innerHTML = "$" + elem.price;
+  des.style.fontSize = "12px";
 
   totp = totp + elem.price;
 

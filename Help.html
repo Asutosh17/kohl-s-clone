@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="/assets/kohl's fav icon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/fa81f09cd3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="help.css">
+    <title>Customer Service</title>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <div class="left"><h2>KOHL'SHelp</h2></div>
-        <div><button class="shop">Shop Kohl's.com</button></div>
+        <div class="left" onclick="homepage()"><h2>KOHL'SHelp</h2></div>
+        <div><button class="shop" onclick = "home()">Shop Kohl's.com</button></div>
     </div>
     <hr>
     <!-- Search bar -->
@@ -126,3 +127,12 @@
     </div>
 </body>
 </html>
+
+<script>
+    function home(){
+        window.location.href = "home.html"
+    }
+    function homepage(){
+        window.location.href = "home.html"
+    }
+</script>

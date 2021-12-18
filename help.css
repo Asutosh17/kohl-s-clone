@@ -35,7 +35,7 @@
     width: 80%;
     height: 100%;
     padding-left: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .shop{
     font-size: 15px;
@@ -43,6 +43,11 @@
     background-color: transparent;
     margin-left: 120px;
     margin-top: 23px;
+    padding: 8px;
+}
+.shop:hover{
+    background-color: black;
+    color: white;
 }
 /* Note  */
 .box{
@@ -53,13 +58,14 @@
     margin-top: 20px;
     display: flex;
     border-radius: 10px;
+    background-color: rgb(255,243,128);
 }
 .note{
    width: 80%;
-   height: 100%;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
    padding: 20px;
-   color: white;
+   color: black;
+   background-color: rgb(255,243,128);
 }
 .learn{
     font-size: 18px;
@@ -67,8 +73,9 @@
     border-radius: 20px;
     margin-top: 25px;
     margin-left: 60px;
-    color: white;
+    color: black;
     cursor: pointer;
+    background-color: rgb(255,243,128);
 }
 /* List  */
 .all{

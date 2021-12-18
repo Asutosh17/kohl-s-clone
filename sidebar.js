@@ -22,3 +22,7 @@ function showSideBar() {
  function signIn(){
    window.location.href = "signinkohls.html"
  }
+
+ function help(){
+   window.location.href = "Help.html"
+ }

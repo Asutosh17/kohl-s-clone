@@ -18,3 +18,7 @@ function showSideBar() {
      show.style.display = "block"
    }
  }
+
+ function signIn(){
+   window.location.href = ""
+ }

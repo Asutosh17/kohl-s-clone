@@ -20,5 +20,5 @@ function showSideBar() {
  }
 
  function signIn(){
-   window.location.href = ""
+   window.location.href = "signinkohls.html"
  }

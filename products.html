@@ -4,11 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="/assets/kohl's fav icon.png" type="image/x-icon">
+    <title>Kohl's | Shop Clothing ,Shoes,Home,Kitchen,Bedding,Toys & More</title>
     <script src="https://kit.fontawesome.com/96bcaae285.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="product.css" /> `
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
+
+<!-- navbar -->
+<div class="nav">
+  <div class="brand"><a href="home.html"><img src="assets/logo.jpg" alt="KOHL'S" style="width: 150px; height: 30px;"></a></div>
+  <div class="search">
+      <form id="form">
+          <button><i class="fas fa-search fa-2x"></i></button><input type="text" placeholder="What are you looking for today?" id="searchbox">
+        </form>
+  </div>
+  <div class="account"><a href="#"><img src="/assets/user.png"  onclick="accountDrop()" alt="" style="width: 35px; height: 35px;"></a> <p>Account</p>
+      <div id="dropdown">
+          <div class="dropdownone">
+              <button>SIGN IN</button>
+              <a href="">Create Account</a>
+          </div>
+      <div class="dropdowntwo color"><i class="fas fa-info-circle"></i><span>Find your offers & Kohl's cash in your <a href="">wallet</a></span></div>
+      <div class="dropdowntwo"><i class="fas fa-wallet"></i><h3>Wallet</h3> </div>
+      <div class="dropdowntwo"><i class="fas fa-wallet"></i><img src="" alt=""> <h3>Reward</h3> </div>
+      <div class="dropdowntwo"><i class="fas fa-wallet"></i><img src="" alt=""> <h3>MY Kohl's Card</h3></div>
+      </div>
+  </div>
+  <div class="cart"><a href="cart.html"><img src="/assets/shopping-cart.png" alt="" style="width: 35px; height: 35px;"></a> <p>$0.00</p></div>
+  <div class="checkout"><a href="payment.html"><img src="/assets/right.png" alt="" style="width: 35px; height: 35px;"></a><p>Check Out</p></div>
+</div>
+
+
+<!-- menu and help section -->
+<div class="secnav">
+  <div class="shop">
+      <i class="fa fa-bars" onclick="showSideBar()"><span> Shop By Department</span></i>
+      <ul class="mainmenu" type="none">
+          <li><a href="#">Shop My Store</a></li>
+          <li><a href="#">Holiday Deals</a></li>
+          <li><a href="#">Holiday Gift Shop</a></li>
+          <li><a href="#">From the home</a></li>
+          <li><a href="womenProduct.html">Women</a></li>
+          <li><a href="womenProduct.html">Women's Plus Size</a></li>
+          <li><a href="#">Juniors</a></li>
+          <li><a href="products.html">Men</a></li>
+          <li><a href="products.html">Men's Big & Tall</a></li>
+          <li><a href="#">Shoe</a></li>
+          <li><a href="#">Toys</a></li>
+          <li><a href="kid.html">Kids</a></li>
+          <li><a href="#">Baby</a></li>
+          <li><a href="#">Bed & Bath</a></li>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Jewelry & Accessories</a></li>
+          <li><a href="#">Beauty | SHEFORA</a></li>
+          <li><a href="#">Active & Fitness</a></li>
+      </ul>
+  </div>
+  <div class="selectstore">
+      <i class="fas fa-star"></i><span class="fas">My Store : Select Store</span>
+  </div>
+  <div class="coupon"><i class="fas fa-dollar-sign"></i><span style="font-size: 17px; font-weight:bold;">Kohl’s Coupons</span></div>
+  <div class="help"><i class="far fa-question-circle"></i><span style="font-size: 17px;font-weight:bold;">Help</span></div>
+</div>
+
+
+
 <div id="top">
 <img src="https://pubsaf.global.ssl.fastly.net/prmt/867c6c2de2c300c1fbb52855d1a2e3f4" height="95px"/>
 </div> 
@@ -18,20 +80,104 @@
 
 </div>
 <h3 >Men's Colleection</h3>
-<div id="full">
-<div id="left">
-<label>Department</label>
-<select class="dept">
-<option>-----</option>
-<option>Cloathing</option>
-<option>Shoes</option>
-<option>Accessory</option>
-<option>Jewelery</option>
-<option>Beauty</option>
-<option>Watches</option>
-</select>
 
-</div>
+<div id="filterBar">
+  <h3 style="text-align: left;margin-left: 25%;">All Products</h3>
+  <label id="sort">Sort By</label>
+  <select >
+  <option>Featured</option>
+  <option>New Arrivals</option>
+  <option>Best Sellers</option>
+  <option>Price Low-High</option>
+  <option>Price High-Low</option>
+  <option>Highest Rated</option>
+  <option>Percent Off</option>
+  </select>
+  <label id="sort">Show</label>
+  <select >
+  <option>48 items</option>
+  <option>72 items</option>
+  <option>96 items</option>
+  <option>120 items</option>
+  
+  </select>
+  
+  </div>
+
+<div id="full">
+  <div id="left">
+
+    <select id="leftselect">
+    <option>Department</option>
+    <option id="deptsub">Cloathing</option>
+    <option id="deptsub">Shoes</option>
+    <option id="deptsub">Accessory</option>
+    <option id="deptsub">Jewelery</option>
+    <option id="deptsub">Beauty</option>
+    <option id="deptsub">Watches</option>
+    </select>
+    <select id="leftselect">
+      <option>Size Range</option>
+      <option id="deptsub">Regular</option>
+      <option id="deptsub">Plus</option>
+      <option id="deptsub">Petite</option>
+      <option id="deptsub">Maternity</option>
+     
+      </select>
+      <select id="leftselect">
+        <option>Size</option>
+        <option id="deptsub">KING</option>
+        <option id="deptsub">QUEEN</option>
+        <option id="deptsub">FULL</option>
+        <option id="deptsub">STANDARD</option>
+        <option id="deptsub">TWIN</option>
+        <option id="deptsub">TWIN XL</option>
+    
+        </select>
+        <select id="leftselect">
+          <option>Brand</option>
+          <option id="deptsub">Calvin Clein</option>
+          <option id="deptsub">Croft & Borrow</option>
+          <option id="deptsub">FLX</option>
+          <option id="deptsub">LC Lauren Conrad</option>
+          <option id="deptsub">Nine West</option>
+          <option id="deptsub">SO</option>
+          </select>
+          <select id="leftselect">
+            <option>Color</option>
+            <option id="deptsub">Beig/khaki</option>
+            <option id="deptsub">Black</option>
+            <option id="deptsub">Red</option>
+            <option id="deptsub">Blue</option>
+            <option id="deptsub">White</option>
+            <option id="deptsub">Yellow</option>
+            <option id="deptsub">Green</option>
+            </select>
+            <select id="leftselect">
+              <option>Price</option>
+              <option id="deptsub">Under $10</option>
+              <option id="deptsub">$10 to $25</option>
+              <option id="deptsub">$25 to $50</option>
+              <option id="deptsub">$50 to $100</option>
+              <option id="deptsub">$100 to $125</option>
+              <option id="deptsub">$125 to $150</option>
+              </select>
+              <select id="leftselect">
+                <option>Customer Rating</option>
+                <option id="deptsub">Cloathing</option>
+                <option id="deptsub">Shoes</option>
+                <option id="deptsub">Accessory</option>
+                <option id="deptsub">Jewelery</option>
+                <option id="deptsub">Beauty</option>
+                <option id="deptsub">Watches</option>
+                </select>
+                <select id="leftselect">
+                  <option>Promotions</option>
+                  <option id="deptsub">Clearence</option>
+                  <option id="deptsub">Sale</option>
+                 
+                  </select>
+    </div>
 <div id="right">
 
 </div>
@@ -145,3 +291,4 @@
 </body>
 </html>
 <script src="product.js"></script>
+<script src="sidebar.js"></script>

@@ -8,7 +8,7 @@ document.querySelector("header>div>div").addEventListener("click",shop);
 
 function shop() {
   
-    window.location.href = "products.html";
+    window.location.href = "womenProduct.html";
 }
 
 var data = [
